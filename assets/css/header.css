@@ -1,0 +1,368 @@
+
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/Poppins-Regular.ttf');
+}
+
+body {
+	font-family: 'Poppins', sans-serif !important;
+	background-image: linear-gradient(315deg, #f8ceec 0%, #AEB8EA 100%);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.logo {
+	width: 100%;
+	padding-top: 10px;
+}
+
+.nopadding {
+	padding: 0 !important;
+}
+
+/* .navbar.navbar-clean {
+  background: #fff;
+  border-radius: 0;
+  border-bottom: 1px solid #bfbfbf;
+  color: #8f8f8f;
+} */
+.navbar.navbar-clean .navbar-brand {
+	font-weight: 200;
+}
+
+.navbar.navbar-clean a {
+	color: #000000;
+}
+
+.navbar.navbar-clean ul>li>a:hover, .navbar.navbar-clean li.open a {
+	background: #fafafa;
+}
+
+.navbar.navbar-clean a i {
+	position: relative;
+	top: 1px;
+	margin-left: 6px;
+}
+
+/* Required for Dropdowns */
+.dropdown {
+	position: relative;
+}
+
+.dropdown-toggle:focus {
+	outline: 0;
+}
+
+.dropdown-menu {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 200px;
+	padding: 1px 0 !important;
+	margin: 15px 0 0;
+	list-style: none;
+	font-size: 14px;
+	text-align: left;
+	background-color: #fafafa;
+	border: 1px solid #bfbfbf;
+	border-radius: 2px;
+	box-shadow: none;
+}
+
+.dropdown-menu:before {
+	content: "\00a0";
+	display: block;
+	height: 10px;
+	width: 10px;
+	position: absolute;
+	top: -6px;
+	border: 1px solid #8f8f8f;
+	border-right: 0;
+	border-bottom: 0;
+	background-color: #fafafa;
+	left: 10px;
+	-webkit-transform: rotate(48deg) skew(5deg);
+	transform: rotate(48deg) skew(5deg);
+}
+
+li .dropdown-menu:before {
+	height: 0;
+	width: 0;
+}
+
+ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.dropdown-menu.pull-right {
+	right: 0;
+	left: auto;
+}
+
+.dropdown-menu .divider {
+	height: 1px;
+	margin: 9px 0;
+	overflow: hidden;
+	background-color: #bfbfbf;
+}
+
+.dropdown-menu>li>a {
+	display: block;
+	padding: 2px 10px;
+	clear: both;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 2;
+	color: #ffffff !important;
+	white-space: nowrap;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	text-decoration: none;
+	color: #808080;
+	background-color: #f3f3f3;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    background-color: #ffffff !important;
+    color: #781d7e !important;[]
+}
+.open>.dropdown-menu {
+	display: block;
+}
+
+.open>a {
+	outline: 0;
+}
+
+.dropdown-menu-right {
+	left: auto;
+	right: 0;
+}
+
+.dropdown-menu-left {
+	left: 0;
+	right: auto;
+}
+
+.dropdown-header {
+	display: block;
+	padding: 3px 20px;
+	font-size: 12px;
+	line-height: 1.42857143;
+	color: #777777;
+	white-space: nowrap;
+}
+
+.dropdown-backdrop {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 990;
+}
+
+.pull-right>.dropdown-menu {
+	right: 0;
+	left: auto;
+}
+
+.dropup .caret, .navbar-fixed-bottom .dropdown .caret {
+	border-top: 0;
+	border-bottom: 4px solid;
+	content: "";
+}
+
+.dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
+	top: auto;
+	bottom: 100%;
+	margin-bottom: 2px;
+}
+
+.button-group, .button-group-vertical {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button-group>.button, .button-group-vertical>.button {
+	position: relative;
+	float: left;
+}
+/* Bootstrap overwrite */
+.menu a {
+	color: #ffffff;
+}
+
+.nav.navbar-nav.navbar-right {
+	margin-top: 25px;
+}
+
+.glyphicon {
+	padding: 0px 5px;
+	font-size: 16px;
+	/*   color: #781d7e; */
+}
+.fa{
+	padding: 0px 5px;
+	font-size: 16px !important;
+}
+
+.navbar-brand {
+	height: 80px;
+}
+.navbar-brand:focus{
+	outline: 0;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: #781d7e;
+}
+
+.navbar-border {
+	margin-top: 35px;
+	border: 1px solid #781d7e;
+}
+
+.menu ul li {
+	margin: 2px 5px;
+}
+
+.menu ul li a {
+	background: #781d7e;
+	border-radius: 3px;
+	display: inline-block;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	/*    margin: 2px 5px;*/
+	position: relative;
+	text-align: left;
+	vertical-align: middle;
+	/*    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;*/
+	width: 100%;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #781d7e;
+	border-radius: 3px;
+	border: 1px solid #781d7e;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #781d7e;
+	border-radius: 3px;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+	text-decoration: none;
+	background-color: #ffffff;
+	color: #781d7e !important;
+	border-radius: 3px;
+	border: 1px solid #781d7e !important;
+}
+
+.row {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+/* .main-content{
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+} */
+/* .container {
+    width: 1300px !important;
+} */
+.navbar {
+	margin-bottom: 0px;
+	min-height: 100px;
+}
+/* .main {
+    padding: 30px 0px;
+} */
+.nav>li>a {
+	padding: 10px 10px;
+}
+
+.dropdown-menu.dropdown-sbs {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.dropdown-sbs li {
+	background: #781d7e !important;
+	width: 100%;
+	
+	color: #fff !important;
+	padding: 1px;
+	border: 1px solid #fff;
+	margin: 1px 0px !important;
+}
+
+.dropdown-sbs li: hover {
+	background: #f00;
+}
+
+@media only screen and (max-width: 768px) {
+	.navbar-width li {
+		width: 100%;
+	}
+	/* remove the horizontal scroll bar under 768 */
+	.navbar-collapse.in {
+		overflow-y: unset !important;
+	}
+	.container-fluid>.navbar-collapse {
+		margin-right: 0px !important;
+		margin-left: 0px !important;
+	}
+	.dropdown ul li {	
+		width: 100%;
+	}
+	.menu ul li {
+		margin: 2px 0px !important;
+	}
+	ul li:hover > ul {
+	  position: inherit;
+	}
+	.dropdown-menu li a {
+	  padding: 2px 15px 2px 25px;
+	}
+}
+
+
+
+.menu-active {
+	background-color: #ffffff !important;
+	color: #781d7e !important;
+}

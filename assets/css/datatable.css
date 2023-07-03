@@ -1,0 +1,439 @@
+/* @font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/Poppins-Regular.ttf');
+}
+
+body {
+	color: #566787;
+	background: #f5f5f5;
+	font-family: 'Poppins', sans-serif !important;
+	font-size: 13px;
+} */
+table{
+	width: 100% !important;
+}
+table.dataTable thead th{
+	white-space: nowrap;
+}
+.table-wrapper {
+	background: #fff;
+	border: 1px solid #781d7e;
+	border-radius: 3px;
+}
+
+.table-wrapper th {
+	outline: none;
+}
+
+.table-title {
+	background: #781d7e;
+	color: #fff;
+	padding: 10px 10px;
+	border-radius: 3px 3px 0 0;
+}
+
+.tbl-padding {
+	margin: 20px 10px 20px 10px;
+}
+
+.table-title h2 {
+	margin: 5px 0 0;
+	font-size: 20px;
+}
+
+.table-title .btn-group {
+	float: right;
+}
+
+.table-title .btn {
+	color: #fff;
+	float: right;
+	font-size: 13px;
+	border: none;
+	min-width: 50px;
+	border-radius: 2px;
+	border: none;
+	outline: none !important;
+	margin-left: 10px;
+}
+
+.table-title .btn i {
+	float: left;
+	font-size: 21px;
+	margin-right: 5px;
+}
+
+.table-title .btn span {
+	float: left;
+	margin-top: 2px;
+}
+
+table.table tr th, table.table tr td {
+	border-color: #781d7e;
+	padding: 12px 15px;
+	vertical-align: middle;
+}
+
+table.table tr th:first-child {
+	width: 15%;
+}
+#taskListTable tr th:first-child {
+	width: 1% !important;
+}
+th.select-checkbox.dt-checkboxes-cell.dt-checkboxes-select-all.sorting_asc {
+    background-image: none !important;
+    width: 1% !important;
+}
+
+table.table tr th:last-child {
+	width: 100px;
+}
+.description #complaintTable_wrapper tr th:last-child, .description #complaintTable_wrapper tr td:last-child{
+    width: 100px !important;
+}
+table.table-striped tbody tr:nth-of-type(odd) {
+	background-color: #f6ebf7;
+}
+
+table.table-striped.table-hover tbody tr:hover {
+    background-color: none !important;
+}
+.table-hover > tbody > tr:hover {
+     background-color: none !important;
+}
+tr.even:hover {
+    background: none !important;
+}
+
+table.table th i {
+	font-size: 13px;
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+table.table td:last-child i {
+	opacity: 0.9;
+	font-size: 22px;
+	margin: 0 5px;
+}
+
+table.table td a {
+	font-weight: bold;
+	color: #566787;
+	display: inline-block;
+	text-decoration: none;
+	outline: none !important;
+}
+
+table.table td a:hover {
+	color: #781d7e;
+	cursor: default;
+}
+
+table.table td a.edit {
+	color: #781D7E;
+}
+
+table.table td a.delete {
+	color: #F44336;
+}
+
+table.table td i {
+	font-size: 19px;
+}
+
+table.table .avatar {
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.pagination {
+	float: right;
+	margin: 0 0 5px;
+}
+
+.pagination li a {
+	border: none;
+	font-size: 13px;
+	min-width: 30px;
+	min-height: 30px;
+	color: #999;
+	margin: 0 5px;
+	line-height: 30px;
+	border-radius: 2px !important;
+	text-align: center;
+	padding: 0 6px;
+}
+
+.pagination li a:hover {
+	color: #666;
+}
+
+.pagination li.active a, .pagination li.active a.page-link {
+	background: #eb6e1f;
+	border-color: #eb6e1f !important;
+	color: #fff !important;
+}
+
+.pagination li.active a:hover {
+	background: #0397d6;
+}
+
+.pagination li.disabled i {
+	color: #ccc;
+}
+
+.pagination li i {
+	font-size: 16px;
+	padding-top: 6px
+}
+
+.hint-text {
+	float: left;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+/* Custom checkbox */
+.custom-checkbox {
+	position: relative;
+}
+
+.custom-checkbox input[type="checkbox"] {
+	opacity: 0;
+	position: absolute;
+	margin: 5px 0 0 3px;
+	z-index: 9;
+}
+
+.custom-checkbox label:before {
+	width: 18px;
+	height: 18px;
+}
+
+.custom-checkbox label:before {
+	content: '';
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: text-top;
+	background: white;
+	border: 1px solid #bbb;
+	border-radius: 2px;
+	box-sizing: border-box;
+	z-index: 2;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+label:after {
+	content: '';
+	position: absolute;
+	left: 6px;
+	top: 3px;
+	width: 6px;
+	height: 11px;
+	border: solid #000;
+	border-width: 0 3px 3px 0;
+	transform: inherit;
+	z-index: 3;
+	transform: rotateZ(45deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked+label:before {
+	border-color: #03A9F4;
+	background: #03A9F4;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+label:after {
+	border-color: #fff;
+}
+
+.custom-checkbox input[type="checkbox"]:disabled+label:before {
+	color: #b8b8b8;
+	cursor: auto;
+	box-shadow: none;
+	background: #ddd;
+}
+/* end custom checkbox */
+
+/* Add for REQs */
+.add-btn {
+	background: #fff;
+	color: #781d7e !important;
+}
+
+/* .title-name {
+	width: 170px !important;
+} */
+
+.pagination>li>a, .pagination>li>span {
+	color: #606060 !important;
+	border: 1px solid #eb6e1f !important;
+}
+
+.table {
+	margin-bottom: 0px !important;
+}
+
+.sbs-table thead {
+	height: 50px;
+}
+
+.table>thead>tr>th {
+	vertical-align: middle !important;
+}
+
+/* jquery Data table Overwrite */
+.dataTables_length {
+	float: left;
+}
+
+.dataTables_filter {
+	float: right;
+}
+
+.dataTables_info {
+	float: left;
+	color: #781d7e !important;
+	padding-top: 10px !important;
+}
+.dataTables_wrapper .dataTables_length{
+    color: #781d7e !important;
+}
+.dataTables_length select{
+	border: 1px solid #781d7e;
+}
+.dataTables_wrapper .dataTables_filter input::placeholder{
+	color:#781d7e !important;
+}
+
+.dataTables_paginate {
+	float: right;
+	padding-top: 10px;
+}
+
+.dataTables_paginate>span {
+	margin: 3px;
+}
+
+.dataTables_paginate>span>a {
+	font-size: 13px;
+	min-width: 30px;
+	min-height: 25px;
+	padding: 5px 10px;
+	margin: 5px;
+	/*         line-height: 30px; */
+	color: #781d7e;
+	border: 1px solid #781d7e !important;
+}
+
+.dataTables_paginate>span>a:hover {
+	background-color: #781d7e !important;
+	color: #ffffff;
+}
+
+
+.dataTables_paginate a {
+	color: #781d7e;
+}
+
+.dataTables_length label {
+	font-weight: normal;
+}
+
+input[type="search"] {
+	border: 2px solid #781d7e;
+	padding: 5px;
+	border-radius: 3px;
+	color: #781d7e;
+	font-weight: normal;
+}
+input[type="search"]:focus{
+	outline: none !important;
+}
+
+/* Assign Multiple Task Button */
+.assign-btn{
+	color: #fff;
+    background-color: #781d7e;
+    border-color: #781d7e;
+    margin-bottom: 15px !important;
+    /* float: right; */
+    width: 199px;
+}
+.assign-btn:hover, .assign-btn:focus{
+	color: #fff !important;
+}
+/* Datatable bottom padding */
+.container {
+    padding-bottom: 20px;
+}
+
+/* Datatable title txt alignment */
+/* table.dataTable thead th {
+    padding: 9px !important;
+} */
+.table > tbody > tr > td {
+    border-top: none !important;
+}
+/* Add bg in row color when check box click in Datatable */
+table.dataTable tbody tr.selected {
+    color: white !important;
+    background-color: #781d7e !important;
+}
+/* data table responsive */
+/* .dataTables_wrapper {
+	overflow:auto;
+} */
+.dataTables_scrollBody thead tr[role="row"]{
+    visibility: collapse !important;
+}
+/* data table text justify  */
+table.table-striped tbody tr:nth-of-type(odd),table.table-striped tbody tr:nth-of-type(even){
+	text-align: justify;
+}
+@media screen and (max-width: 640px){
+	.dataTables_length{
+		float: left !important;
+	}
+	.dataTables_wrapper .dataTables_filter{
+		margin-top: 0px !important;
+		float: right !important;
+	}
+}
+
+/* table responsive */
+@media (max-width: 964px){
+	.main{
+		width: 100% !important;
+	}
+} 
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 17px 10px 10px !important;
+} 
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.next:hover ,.dataTables_wrapper .dataTables_paginate .paginate_button.previous:hover{
+	color: #eb6e1f !important;
+	text-decoration: none;
+	cursor: pointer;
+}
+.paginate_button.next:focus , .paginate_button.previous:focus
+{
+	background: #fff !important;
+}
+.paginate_button:focus {
+	background: #fff !important;
+	color: #781d7e !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+@media (min-width: 768px){
+		.navbar-right {
+    	margin-bottom: 1px !important;
+	}
+}
+.dataTables_scrollBody{
+	overflow-y: hidden !important;
+}

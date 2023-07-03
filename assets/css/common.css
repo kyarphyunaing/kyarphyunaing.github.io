@@ -1,0 +1,47 @@
+.btn-save {
+	background: #eb6e1f;
+	color: #ffffff;
+}
+
+.btn.btn-save:hover {
+	background: #ffffff;
+	color: #606060;
+	border: 2px solid #eb6e1f;
+}
+
+
+.btn {
+	width: 100px;
+}
+
+.btn-save {
+	background: #781d7e;
+	color: #ffffff;
+}
+
+.btn.btn-save:hover {
+	background: #eb6e1f;
+	color: #ffffff;
+	border: 1px solid #eb6e1f; /* changed 2px to 1px by KKK */
+}
+
+.btn.btn-save:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	color:#ffffff}; /* Added by KKK */
+
+.btn-circle {
+	width: 25px;
+	height: 25px;
+	border-radius: 15px !important;
+}
+
+ul.custom-ul li {
+	display: inline-block;
+}
+
+ul.custom-ul li input {
+	border: none;
+	border-width: 0;
+	box-shadow: none;
+}

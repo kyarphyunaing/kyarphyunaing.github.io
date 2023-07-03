@@ -1,0 +1,98 @@
+a, a:hover, a:visited {
+	text-decoration:none!important;
+}
+
+#sp-main-menu ul {
+	margin: 0 25px;
+	}
+
+
+#sp-service-wrapper i {
+	border:none;
+	}
+
+#sp-bottom-wrapper .container {
+	border-bottom:none;
+	}
+	
+.about-me {
+    font-size: 16px;
+    line-height: 25px;
+    }
+
+.about-qpc {
+    font-size: 18px;
+    line-height: 25px;
+    }
+
+#sp-component-area {
+	background-color: #F3F3F3;
+	padding: 25px;
+	margin-bottom: 15px;
+}
+
+
+#sp-logo {
+	display:none!important;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  
+  #sp-logo {
+	display:none!important;
+  }
+  
+}
+
+@media (max-width: 767px) {
+
+  #sp-logo {
+	display:block!important;
+  }
+  
+}
+
+@media (max-width: 480px) {
+
+  #sp-logo {
+		display:block;
+	}
+  
+}
+
+@media (max-width: 320px) {
+  
+  #sp-logo {
+		display:block;
+	}
+  
+}
+.icon-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.icon-facebook {
+  background: #3B5998;
+  color: white;
+}
+.icon-html{
+	color: #3B5998;
+}
+   /*  .menu-item{
+            list-style:none;
+        } 
+         .menu-item a{
+            padding:20px;
+            padding-bottom:10px;
+            border:1px solid #1B3E70;
+            color:#1B3E70;
+            text-decoration:none;
+        }.menu-item a:hover{
+                background-color:#1B3E70;
+            color:white;
+        }
+        .menu-item .active{
+             background-color:#1B3E70;
+             color:white;
+        
+        }   */

@@ -1,0 +1,169 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/Poppins-Regular.ttf');
+}
+
+body {
+	font-family: 'Poppins', sans-serif !important;
+	background-image: url(../images/login-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.container-box {
+	height: 100%;
+}
+
+.background-box {
+	background-image: url("../images/chooserole-bg.png");
+	/* background-size: cover; */
+	background-size: 1000px 563px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* background-attachment: fixed; */
+	position: relative;
+	height: 545px;
+	width: 100%;
+	max-width: 1000px;
+	margin: 100px auto;
+	box-shadow: 1px 10px 30px -10px rgba(0,0,0,0.5);
+}
+.images-center img{
+	margin-top: 60px;
+}
+.box-1 {
+	display: block;
+	position: relative;
+	max-width: 270px;
+	height: 290px;
+	background:
+	#781d7e;
+	border-radius: 4px;
+	padding: 25px 20px;
+}
+
+.box-2 {
+	display: block;
+	position: relative;
+	max-width: 270px;
+	height: 290px;
+	background:
+	#781d7e;
+	border-radius: 4px;
+	padding: 25px 20px;
+	margin-left: 150px;
+}
+
+.box-1 h2, .box-2 h2 {
+    color: #fff;
+    padding: 10px;
+    margin-top: 10px !important;
+    text-align: center;
+    font-size: 25px;
+}
+
+p {
+    font-weight: 400;
+    margin: 35px 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.images-center, .box-center {
+	margin-top: 55px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+	margin-top: 30px;
+	color: #fff;
+}
+.btn:focus{
+	outline: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.btn_login {
+    background-color: #eb6e1f;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    border-radius: 3px;
+    box-shadow: 1px 5px 20px -5px rgba(0,0,0,0.4);
+    color: #fff;
+    margin: 12px;
+    cursor: pointer;
+}
+
+.btn_login:hover {
+    color: 
+    #781d7e;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn_login:focus{
+	color: #fff;
+}
+
+@media ( max-width : 1150px) and (min-width: 766px) {
+	.background-box {
+		width: 80% !important;
+	}
+	.box-1{
+		left: 47px !important;
+	}
+	.box-2{
+		right: 47px !important;
+	}
+}
+
+@media ( max-width : 767px) {
+	.background-box {
+		background-image: url("../images/chooserole-bg.png");
+		background-size: 1000px 804px;
+		margin-bottom: 80px !important;
+		margin-top: 50px !important;
+		width: 70% !important;
+		height: 800px !important;
+		top: 30px !important;
+		bottom: 10px !important;
+	}
+	.box-center {
+		margin-top: 30px;
+		display: block !important;
+	}
+	.box-1 {
+		margin: auto !important;
+		left: 0px !important;
+	}
+	.box-2 {
+		top: 20px !important;
+		margin-left: 0px !important;
+		margin: auto !important;
+		right: 0px !important;
+	}
+	.images-center img {
+	    margin-top: 35px;
+	}
+}
+@media ( max-width : 990px) and (min-width: 768px) {
+	.box-2 p{
+		margin: 35px 0px 55px 0px;
+	}
+	.box-2{
+		max-width: none !important;
+	}
+}

@@ -1,0 +1,245 @@
+*{
+	outline:none !important;
+}
+.modal .delete-modal-dialog {
+	max-width: 400px;
+}
+
+.modal .modal-header{
+	padding: 10px 10px;
+	border: none;
+}
+.modal .modal-footer{
+	border: none;
+	padding: 0px 15px 15px 10px;
+}
+.modal .modal-content {
+	border-radius: 3px;
+	border: none;
+}
+
+.modal .modal-body {
+	padding: 15px 18px 0px 20px !important;
+	border: none;
+}
+
+.modal-header {
+	background-color: #781d7e;
+	color: #ffffff;
+}
+
+.modal-header .close {
+	color: #fff;
+	margin-top: 5px !important;
+	margin-right: 15px;
+}
+.modal-header .close:focus {
+	outline:none !important;
+	box-shadow: none !important;
+}
+
+.modal .modal-title {
+	display: inline-block;
+	margin: 5px 0px 5px 13px;
+	font-size: 16px;
+}
+
+.modal .form-control {
+	box-shadow: none;
+	border-color: #dddddd;
+}
+
+.modal textarea.form-control {
+	resize: vertical;
+}
+input.idField {
+	display: none;
+}
+.modal .btn {
+	border-radius: 2px;
+	min-width: 100px;
+}
+
+.modal form label {
+	font-weight: normal;
+}
+.modal-body .btn-save{
+	background-color: #781d7e;
+	color: #fff;
+}
+.modal-body .btn-save:hover{
+	background-color: #eb6e1f;
+	color: #fff;
+}
+
+.modal .delete-modal-dialog .modal-footer {
+	padding-top: 0px;
+	margin: 0px 10px 10px 10px;
+}
+/* end delete modal dialog */
+
+
+/* 	change button color */
+.modal-footer .btn-close, .modal-footer .btn-save, .modal-footer .btn-delete{
+	background-color: #781d7e;
+	color: #fff;
+}
+
+.modal-footer .btn-close:hover, .modal-footer .btn-save:hover,
+	.modal-footer .btn-delete:hover {
+	background-color: #eb6e1f;
+	color: #fff;
+}
+
+/* custom radio */
+.inline-radio div{
+	float:left;
+	margin-right:10px;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ddd;
+    border-radius: 100%;
+    background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background: #781d7e;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+/* end custom radio */
+
+/* custom select */
+/* .ms-active button span{
+	color: #000 !important;
+} */
+
+/* tabs design for dialog */
+.errorMsg {
+	color: red;
+}
+ul.tabs{
+	padding-left: 20px !important;
+}
+ul.tabs li {
+	background: none;
+    color: #222;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 2px solid #781d7e;
+    width: 48%;
+    padding: 3px;
+    text-align: center;
+}
+ul.tabs li.current {
+	color: #fff;
+    background: #781d7e;
+    margin-top: 20px;
+    border-radius: 4px 4px 0 0;
+    width: 48%;
+    padding: 3px;
+    text-align: center;
+}
+.tab-content {
+	display: none;
+}
+.tab-content.current {
+	display: inherit;
+}
+ul.tabs2{
+	padding-left: 20px !important;
+}
+ul.tabs2 li {
+	background: none;
+    color: #222;
+    display: inline-block;
+    cursor: pointer;
+    border-bottom: 2px solid #781d7e;
+    width: 48%;
+    padding: 3px;
+    text-align: center;
+}
+ul.tabs2 li.current {
+	color: #fff;
+    background: #781d7e;
+    margin-top: 20px;
+    border-radius: 4px 4px 0 0;
+    width: 48%;
+    padding: 3px;
+    text-align: center;
+}
+.tab-content2 {
+	display: none;
+}
+.tab-content2.current {
+	display: inherit;
+}
+/* end tabs design */
+
+/* end custom select */
+.text-warning {
+    color: #f00 !important;
+    margin-bottom: 15px;
+}
+/* change on-off-switch style */
+.on-off-switch-track{
+	border: none !important;
+}
+
+@media (min-width: 300px){
+.delete-modal-dialog{
+	margin: 30px auto !important;
+}
+}
+.modal-footer .btn-close:focus, .modal-footer .btn-save:focus, .modal-footer .btn-warning:focus{
+	outline: none !important;
+	box-shadow: none !important;
+}
+/* Multiselect result width in modal*/
+.modal .ms-options-wrap > .ms-options{
+		width: 92% !important;
+	}
+@media (max-width: 690px) and (min-width: 500px) {
+	.modal .ms-options-wrap > .ms-options{
+		width: 94% !important;
+	}
+}	
